@@ -1,12 +1,10 @@
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <p class="title">FLIP CARD</p>
-      <p>Hover Me</p>
+      <p class="title">{{ name_title_front }}</p>
     </div>
-    <div class="flip-card-back">
-      <p class="title">BACK</p>
-      <p>Leave Me</p>
+    <div class="flip-card-back" [class]="type">
+      <p class="title">{{ name_title_back }}</p>
     </div>
   </div>
 </div>

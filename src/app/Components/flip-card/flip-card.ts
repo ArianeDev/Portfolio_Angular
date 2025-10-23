@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-flip-card',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './flip-card.sass'
 })
 export class FlipCard {
-
+  @Input() name_title_front = '';
+  @Input() name_title_back = '';
+  @Input() type = '';
 }
