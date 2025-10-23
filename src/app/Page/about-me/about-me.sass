@@ -1,0 +1,68 @@
+
+.container_linguagens_projetos
+    display: flex
+    height: 100vh
+
+    .container_linguagens, .container_projetos
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 2rem 0
+      width: 50%
+
+      h2 
+        margin-bottom: 2rem
+
+      .container_icons
+        display: grid
+        align-items: center
+        justify-content: center
+        grid-template-columns: 20% 20% 20%
+        gap: 3rem 4rem
+        height: 90%
+        width: 80%
+
+        .icons_text-linguagens
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          background-color: rgb(255,255,255)
+          box-shadow: 4px 4px 4px rgba(143, 143, 143, 0.445) 
+          color: rgb(184, 184, 184)
+          font-weight: 600
+          border-radius: 0.5rem
+          gap: 0.2rem
+          height: 10rem
+          width: 10rem
+          transition: all .5s ease
+
+          i
+            font-size: 3.5rem
+            color: #751479 
+        
+        :hover 
+          transform: scale(1.1)
+
+    
+app-flip-card
+  display: flex
+  align-items: center
+  justify-content: center
+
+.container_gostos
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 100vh
+
+    h2 
+        margin: 5rem 0
+
+    .container_flip-card
+        display: grid
+        grid-template-columns: 20% 20% 20% 20%
+        justify-content: center
+        align-items: center
+        gap: 3rem 0
+        width: 100%

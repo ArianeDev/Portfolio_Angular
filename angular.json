@@ -30,7 +30,8 @@
               }
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass",
+              "node_modules/boxicons/css/boxicons.min.css"
             ]
           },
           "configurations": {
