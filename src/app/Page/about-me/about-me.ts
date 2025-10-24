@@ -83,25 +83,45 @@ export class AboutMe {
       type: "serie",
     },
     {
-      name_title_front: "Jogo Favorito",
+      name_title_front: "Jogaria todos os dias",
       name_title_back: "Hollow knight",
       type: "game",
     },
     {
-      name_title_front: "Filme favorito",
+      name_title_front: "Simplesmente amo o filme",
       name_title_back: "Lilo e Stitch",
       type: "movie",
     },
     {
-      name_title_front:"Série favorita",
+      name_title_front:"Amo essa série",
       name_title_back:'Anne with an E',
       type: "serie",
     },
     {
-      name_title_front: "Música favorita",
+      name_title_front: "Essa eu escutaria o dia todo",
       name_title_back: 'Anne with an E',
       type: "serie",
-    }
+    },
+    {
+      name_title_front:"O melhor lugar para estar",
+      name_title_back:'Praia',
+      type: "serie",
+    },
+    {
+      name_title_front: "A razão da minha paz e estresse",
+      name_title_back: 'Programar',
+      type: "serie",
+    },
+    {
+      name_title_front:"A cor mais linda do mundo",
+      name_title_back:'Roxo',
+      type: "serie",
+    },
+    {
+      name_title_front: "Minha princesa favorita",
+      name_title_back: 'Merida',
+      type: "serie",
+    },
   ]);
 
   listProjects = signal([
