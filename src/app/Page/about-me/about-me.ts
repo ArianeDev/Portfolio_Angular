@@ -128,22 +128,26 @@ export class AboutMe {
     {
       img: "img/logos/eLOGiar.png",
       name_project: "eLOGiar",
-      description: "Um sistema de reconhecimento de boas atitudes"
+      description: "Um sistema de reconhecimento de boas atitudes",
+      link: "projeto/eLOGiar"
     },
     {
       img: "img/logos/smartTrack.png",
       name_project: "SmartTrack",
-      description: "Um sistema para uma cidade inteligente, onde gerencia todos os sensores da instituição Senai"
+      description: "Um sistema para uma cidade inteligente, onde gerencia todos os sensores da instituição Senai",
+      link: "projeto/SmartTrack"
     },
     {
       img: "img/logos/starzing.png",
       name_project: "Starzing",
-      description: "Um site educativo sobre como o clima espacial, desenvolvido para o hackathon da NASA"
+      description: "Um site educativo sobre como o clima espacial, desenvolvido para o hackathon da NASA",
+      link: "projeto/Starzing"
     },
     {
       img: "img/logos/driveInOut.png",
-      name_project: "DriveInOut",
-      description: "Um sistema de gerenciamento de entrada e saída das pessoas que vão testar seus carros na pista de teste - CTVI."
+      name_project: "Drive-In-Out",
+      description: "Um sistema de gerenciamento de entrada e saída das pessoas que vão testar seus carros na pista de teste - CTVI.",
+      link: "projeto/DriveInOut"
     },
-  ])
+  ]);
 }
