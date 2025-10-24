@@ -2,115 +2,40 @@
     <div class="container_linguagens">
         <h2>Tecnologias</h2>
         <div class="container_icons">
-            <app-card-tecnologias
-                icon="bx bxl-python"
-                text="Python"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="si si-csharp"
-                text="C#"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="bx bxl-java"
-                text="Java"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="bx bxl-django"
-                text="Django"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="si si-springboot"
-                text="SpringBoot"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="si si-mysql"
-                text="MySql"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="bx bxl-react"
-                text="React"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="bx bxl-angular"
-                text="Angular"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="bx bxl-sass"
-                text="Sass"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="bx bxl-javascript"
-                text="JavaScript"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="bx bxl-typescript"
-                text="TypeScript"
-            >
-            </app-card-tecnologias>
-            <app-card-tecnologias
-                icon="si si-github"
-                text="Github"
-            >
-            </app-card-tecnologias>
+
+            @for (item of listTecnologias(); track $index) {
+                <app-card-tecnologias
+                    [icon]="item.icon"
+                    [text]="item.text"
+                >
+                </app-card-tecnologias>
+            }
         </div>
     </div>
     <div class="container_projetos">
         <h2>Projetos</h2>
+        <div class="cards_container_projetos">
+            @for (item of listProjects(); track $index) {
+                <app-flip-card-project
+                    [img]="item.img"
+                    [name_project]="item.name_project"
+                    [description]="item.description"
+                >
+                </app-flip-card-project>
+            }
+        </div>
     </div>
 </section>
 
 <section class="container_gostos">
     <h2>Coisas que fazem da Ariane a Ariane</h2>
     <section class="container_flip-card">
-        <app-flip-card
-            name_title_front="Família"
-            name_title_back="Minha base"
-            type="game"
-        ></app-flip-card>
-        <app-flip-card
-            name_title_front="Filme favorito"
-            name_title_back="Meu companheiro"
-            type="movie"
-        ></app-flip-card>
-        <app-flip-card
-            name_title_front="Amigos"
-            name_title_back='Minha alegria'
-            type="serie"
-        ></app-flip-card>
-        <app-flip-card
-            name_title_front="Animalzinho"
-            name_title_back='Minha alegria'
-            type="serie"
-        ></app-flip-card>
-        <app-flip-card
-            name_title_front="Jogo Favorito"
-            name_title_back="Hollow knight"
-            type="game"
-        ></app-flip-card>
-        <app-flip-card
-            name_title_front="Filme favorito"
-            name_title_back="Super Mario Bros"
-            type="movie"
-        ></app-flip-card>
-        <app-flip-card
-            name_title_front="Série favorita"
-            name_title_back='Anne with an E'
-            type="serie"
-        ></app-flip-card>
-        <app-flip-card
-            name_title_front="Música favorita"
-            name_title_back='Anne with an E'
-            type="serie"
-        ></app-flip-card>
+        @for (item of listCard(); track $index) {
+            <app-flip-card
+                [name_title_front]="item.name_title_front"
+                [name_title_back]='item.name_title_back'
+                [type]="item.type"
+            ></app-flip-card>
+        }
     </section>
 </section>

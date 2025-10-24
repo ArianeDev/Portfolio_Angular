@@ -1,6 +1,7 @@
 
 .container_linguagens_projetos
     display: flex
+    flex-direction: row-reverse
     height: 100vh
 
     .container_linguagens, .container_projetos
@@ -28,7 +29,7 @@
           align-items: center
           justify-content: center
           background-color: rgb(255,255,255)
-          box-shadow: 4px 4px 4px rgba(143, 143, 143, 0.445) 
+          box-shadow: 0 8px 14px 0 rgba(124, 82, 158, 0.336)
           color: rgb(184, 184, 184)
           font-weight: 600
           border-radius: 0.5rem
@@ -44,6 +45,13 @@
         :hover 
           transform: scale(1.1)
 
+      .cards_container_projetos
+        display: grid
+        align-items: center
+        justify-content: center
+        gap: 3rem 4rem
+        height: 90%
+        width: 80%
     
 app-flip-card
   display: flex
