@@ -1,15 +1,30 @@
-import { Component, signal } from '@angular/core';
+import { Component, ElementRef, signal, ViewChild } from '@angular/core';
 import { FlipCard } from '../../Components/flip-card/flip-card';
 import { CardTecnologias } from '../../Components/card-tecnologias/card-tecnologias';
 import { FlipCardProject } from '../../Components/flip-card_project/flip-card_project';
+import { AnimatedText } from '../../Components/animated-text/animated-text';
 
 @Component({
   selector: 'app-about-me',
-  imports: [FlipCard, FlipCardProject, CardTecnologias],
+  imports: [FlipCard, FlipCardProject, CardTecnologias, AnimatedText],
   templateUrl: './about-me.html',
   styleUrl: './about-me.sass'
 })
 export class AboutMe {
+  currentStep = 0;
+
+  @ViewChild('scrollTarget') scrollTarget!: ElementRef;
+
+  nextStep(): void {
+    this.currentStep++;
+  }
+
+  scrollToNextSection(): void {
+    setTimeout(() => {
+      this.scrollTarget.nativeElement.scrollIntoView({ behavior: 'smooth'});
+    }, 300)
+  }
+
   listTecnologias = signal([
     {
       icon: "bx bxl-python",
