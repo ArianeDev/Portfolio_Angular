@@ -16,7 +16,7 @@ export class FlipCardProject {
   constructor(private router: Router) {}
 
   verDetalhes() {
-    this.router.navigate(['/project', this.name_project], {
+    this.router.navigate(['/projects', this.name_project], {
       state: { projeto: this.projeto }
     });
   }
